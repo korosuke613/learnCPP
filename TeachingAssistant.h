@@ -1,9 +1,7 @@
-//
-// Created by Futa HIRAKOBA on 2018/05/15.
-//
+// Copyright 2018 Futa HIRAKOBA
 
-#ifndef PANDORA_TEACHINGASSISTANT_H
-#define PANDORA_TEACHINGASSISTANT_H
+#ifndef TEACHINGASSISTANT_H_
+#define TEACHINGASSISTANT_H_
 
 #include <string>
 #include <unordered_map>
@@ -49,8 +47,9 @@ class TeachingAssistant {
    * @return なし
    */
   void allSayMember();
+
  private:
   std::unordered_map<string, Human> member;  // ここコンテナ
 };
 
-#endif //PANDORA_TEACHINGASSISTANT_H
+#endif  // TEACHINGASSISTANT_H_

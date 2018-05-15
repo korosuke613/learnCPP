@@ -1,3 +1,5 @@
+// Copyright 2018 Futa HIRAKOBA
+
 #include "Human.h"
 #include "TeachingAssistant.h"
 
@@ -8,7 +10,7 @@ int main() {
   miyaji.say(5);
   beeno.say();
 
-  TeachingAssistant ta{};
+  TeachingAssistant ta;
 
   ta.addMember("Ryo SAITO");
   ta.addMember("Futa HIRAKOBA", "ほへ〜");

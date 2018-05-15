@@ -1,9 +1,7 @@
-//
-// Created by Futa HIRAKOBA on 2018/05/15.
-//
+// Copyright 2018 Futa HIRAKOBA
 
-#ifndef PANDORA_HUMAN_H
-#define PANDORA_HUMAN_H
+#ifndef HUMAN_H_
+#define HUMAN_H_
 
 #include <iostream>
 #include <string>
@@ -16,11 +14,9 @@ using std::string;  // ここusingディレクティブ
 class Human : public AbstractHuman {
  public:
   Human() = default;
-
   ~Human() = default;
-
   explicit Human(string name_, string habit_ = "not implement")
-      : name(move(name_)), habit(move(habit_)) {}  // ここexplicit
+      : name(std::move(name_)), habit(move(habit_)) {}  // ここexplicit
 
   /**
    * @brief 魂の叫びをとどろかせる
@@ -48,4 +44,4 @@ class Human : public AbstractHuman {
   string habit;
 };
 
-#endif //PANDORA_MIYAJI_H
+#endif  // HUMAN_H_

@@ -1,20 +1,16 @@
-//
-// Created by Futa HIRAKOBA on 2018/05/15.
-//
+// Copyright 2018 Futa HIRAKOBA
 
-#ifndef PANDORA_ABSTRACTHUMAN_H
-#define PANDORA_ABSTRACTHUMAN_H
+#ifndef ABSTRACTHUMAN_H_
+#define ABSTRACTHUMAN_H_
 
 class AbstractHuman {
  public:
-  // ここ純粋仮想関数
-
   /**
    * @brief 人間は誰しも口癖を持っているはず。
    * @param なし
    * @return なし
    */
-  virtual void say() = 0;
+  virtual void say() = 0;  // ここ純粋仮想関数
 };
 
-#endif //PANDORA_ABSTRACTHUMAN_H
+#endif  // ABSTRACTHUMAN_H_

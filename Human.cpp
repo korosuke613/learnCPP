@@ -1,9 +1,6 @@
-//
-// Created by Futa HIRAKOBA on 2018/05/15.
-//
+// Copyright 2018 Futa HIRAKOBA
 
 #include "Human.h"
-
 void Human::say() {
   std::cout << habit << std::endl;
 }
