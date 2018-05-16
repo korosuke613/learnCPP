@@ -18,28 +18,28 @@ class TeachingAssistant {
    * @param 名前
    * @return なし
    */
-  void addMember(const string &);
+  void addMember(const string&);
 
   /**
    * @brief メンバーを追加する。ついでに口癖も
    * @param 名前, 口癖
    * @return なし
    */
-  void addMember(const string &, const string &);
+  void addMember(const string&, const string&);
 
   /**
    * @brief メンバーを追加する。
    * @param Human
    * @return なし
    */
-  void addMember(Human &);
+  void addMember(Human&);
 
   /**
    * @brief メンバーが名言を叫ぶ。
    * @param メンバー名
    * @return なし
    */
-  void sayMember(const string &);
+  void sayMember(const string&);
 
   /**
    * @brief 全てのメンバーが名言を叫ぶ。
