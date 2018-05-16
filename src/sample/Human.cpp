@@ -1,6 +1,9 @@
 // Copyright 2018 Futa HIRAKOBA
 
 #include "Human.h"
+
+namespace LearnCpp {
+
 void Human::say() {
   std::cout << habit << std::endl;
 }
@@ -13,4 +16,6 @@ void Human::say(int num) {
 
 string Human::getName() {
   return name;
+}
+
 }

@@ -9,6 +9,8 @@
 
 using std::string;  // ここusingディレクティブ
 
+namespace LearnCpp {
+
 class TeachingAssistant {
  public:
   TeachingAssistant() = default;
@@ -52,4 +54,5 @@ class TeachingAssistant {
   std::unordered_map<string, Human> member;  // ここコンテナ
 };
 
+}
 #endif  // TEACHINGASSISTANT_H_

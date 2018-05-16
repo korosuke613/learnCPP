@@ -11,6 +11,8 @@
 using std::string;  // ここusingディレクティブ
 
 // ここ継承
+
+namespace LearnCpp {
 class Human : public AbstractHuman {
  public:
   Human() = default;
@@ -43,5 +45,6 @@ class Human : public AbstractHuman {
   string name;  // ここプライベートメンバ
   string habit;
 };
+}
 
 #endif  // HUMAN_H_

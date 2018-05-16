@@ -4,13 +4,13 @@
 #include "TeachingAssistant.h"
 
 int main() {
-  Human miyaji{"Toshihiro MIYAJI", "ねむりんぐすぱーてぃぴーぽー"};
-  Human beeno{"Ryota FUKUOKA"};
+  LearnCpp::Human miyaji{"Toshihiro MIYAJI", "ねむりんぐすぱーてぃぴーぽー"};
+  LearnCpp::Human beeno{"Ryota FUKUOKA"};
 
   miyaji.say(5);
   beeno.say();
 
-  TeachingAssistant ta;
+  LearnCpp::TeachingAssistant ta;
 
   ta.addMember("Ryo SAITO");
   ta.addMember("Futa HIRAKOBA", "ほへ〜");

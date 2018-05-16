@@ -3,6 +3,8 @@
 #ifndef ABSTRACTHUMAN_H_
 #define ABSTRACTHUMAN_H_
 
+namespace LearnCpp {
+
 class AbstractHuman {
  public:
   /**
@@ -13,4 +15,5 @@ class AbstractHuman {
   virtual void say() = 0;  // ここ純粋仮想関数
 };
 
+}
 #endif  // ABSTRACTHUMAN_H_
