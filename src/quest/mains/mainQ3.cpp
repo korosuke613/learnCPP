@@ -29,6 +29,8 @@ int main(){
     s = "NG";
   }
 
+  std::cout << *cryJa << std::endl;
+  std::cout << *cryUs << std::endl;
   std::cout << std::endl << s << std::endl;
   return 0;
 }

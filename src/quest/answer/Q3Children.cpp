@@ -2,9 +2,9 @@
 
 #include "Q3Children.h"
 std::string Q3ChildAmerican::cryOut() {
-  return apostasy + "Oh! No!";
+  return country + "Oh! No!";
 }
 
 std::string Q3ChildJapanese::cryOut() {
-  return apostasy + "おばぶ！";
+  return country + "おばぶ！";
 }
