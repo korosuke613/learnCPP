@@ -3,6 +3,7 @@
 #ifndef Q3ChildJapanese_H_
 #define Q3ChildJapanese_H_
 
+#include <memory>
 #include "Q3Parent.h"
 
 class Q3ChildAmerican : public Q3Parent {
@@ -15,16 +16,16 @@ class Q3ChildAmerican : public Q3Parent {
 
   /**
    * Q3ChildAmerican
-   * @brief 泣き言ポインタを格納
-   * @param c 泣き言ポインタ
+   * @brief 悲鳴ポインタcryにcを格納するコンストラクタ
+   * @param c 悲鳴ポインタ (const std::shared_ptr<std::string>&)
    */
-  explicit Q3ChildAmerican(std::string* c) : Q3Parent("US"){
+  explicit Q3ChildAmerican(const std::shared_ptr<std::string>& c) : Q3Parent("US"){
     cry = c;
   }
 
   /**
    * ~Q3ChildAmerican
-   * @brief cryに泣き言を渡すデストラクタ
+   * @brief *cryに悲鳴を格納するデストラクタ
    */
   ~Q3ChildAmerican() override {
     *cry = cryOut();
@@ -32,8 +33,8 @@ class Q3ChildAmerican : public Q3Parent {
 
   /**
    * cryOut
-   * @brief 泣き言を返す
-   * @return 泣き言 (std::string)
+   * @brief 悲鳴を返す
+   * @return 悲鳴 (std::string)
    */
   std::string cryOut() override;
 };
@@ -49,16 +50,16 @@ class Q3ChildJapanese : public Q3Parent {
 
   /**
    * Q3ChildJapanese
-   * @brief 泣き言ポインタを格納
-   * @param c 泣き言ポインタ
+   * @brief 悲鳴ポインタcryにcを格納するコンストラクタ
+   * @param c 悲鳴ポインタ (const std::shared_ptr<std::string>&)
    */
-  explicit Q3ChildJapanese(std::string* c) : Q3Parent("JP"){
+  explicit Q3ChildJapanese(const std::shared_ptr<std::string>& c) : Q3Parent("JP"){
     cry = c;
   }
 
   /**
-   * ~Q3ChildJapanese
-   * @brief cryに泣き言を渡すデストラクタ
+   * ~Q3ChildAmerican
+   * @brief *cryに悲鳴を格納するデストラクタ
    */
   ~Q3ChildJapanese() override {
     *cry = cryOut();
@@ -66,8 +67,8 @@ class Q3ChildJapanese : public Q3Parent {
 
   /**
    * cryOut
-   * @brief 泣き言を返す
-   * @return 泣き言 (std::string)
+   * @brief 悲鳴を返す
+   * @return 悲鳴 (std::string)
    */
   std::string cryOut() override;
 };

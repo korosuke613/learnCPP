@@ -6,13 +6,15 @@
 #include <iostream>
 #include <string>
 #include <utility>
+#include <memory>
+
 class Q3Parent {
  private:
   /**
    * isDeath
-   * @brief 死の印 (bool*)
+   * @brief 死の印 (std::shared_ptr<bool>)
    */
-  bool* isDeath{};
+  std::shared_ptr<bool> isDeath{};
 
  protected:
   /**
@@ -23,13 +25,14 @@ class Q3Parent {
 
   /**
    * cry
-   * @brief 泣き言が格納される
+   * @brief 悲鳴が格納される
    */
   std::string* cry{};
 
  public:
   /**
    * Q3Parent
+   * @brief コンストラクタ
    */
   Q3Parent() = default;
 
@@ -56,9 +59,9 @@ class Q3Parent {
   /**
    * setDeath
    * @brief 死を証明する印を刻む
-   * @param 印 (bool*)
+   * @param 印 (std::shared_ptr<bool>)
    */
-  void setDeath(bool*);
+  void setDeath(std::shared_ptr<bool>);
 };
 
 #endif  // Q3Parent_H_
