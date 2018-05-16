@@ -1,0 +1,1 @@
+g++   -std=c++11 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/exeQ1.dir/mainQ1.cpp.o  -o exeQ1 

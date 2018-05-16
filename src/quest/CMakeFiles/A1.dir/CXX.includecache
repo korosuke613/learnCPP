@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/mainQ1.cpp
+Q1.h
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/Q1.h
+iostream
+-
+
+answer/Q1.h
+

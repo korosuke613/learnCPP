@@ -1,0 +1,6 @@
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/CMakeFiles/rebuild_cache.dir
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/CMakeFiles/edit_cache.dir
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/CMakeFiles/A2.dir
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/CMakeFiles/Q2.dir
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/CMakeFiles/A1.dir
+/Users/Futa/Library/Mobile Documents/com~apple~CloudDocs/Program/ClionProjects/learnC++/src/quest/CMakeFiles/Q1.dir

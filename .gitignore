@@ -2,6 +2,6 @@ html/
 latex/
 cmake-build-debug/
 .idea/
-CMakeFiles/
+# CMakeFiles/
 *.cmake
 CmakeCache.txt
