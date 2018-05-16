@@ -5,3 +5,5 @@ cmake-build-debug/
 CMakeFiles/
 *.cmake
 CmakeCache.txt
+exe*
+#Makefile
