@@ -32,5 +32,8 @@ int main(){
   std::cout << *cryJa << std::endl;
   std::cout << *cryUs << std::endl;
   std::cout << std::endl << s << std::endl;
+
+  delete(cryJa);
+  delete(cryUs);
   return 0;
 }
