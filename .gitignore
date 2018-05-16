@@ -7,3 +7,5 @@ CMakeFiles/
 CmakeCache.txt
 exe*
 Makefile
+*.dSYM/
+*.cbp

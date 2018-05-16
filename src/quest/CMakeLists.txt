@@ -11,23 +11,23 @@ set(MAINS "mains")
 
 # 問題1
 set(NUM 1)
-add_executable(exeQ${NUM} ${MAINS}/mainQ${NUM}.cpp ${QUESTION}/Q${NUM}.h)
+add_executable(exeQ${NUM} ${MAINS}/mainQ${NUM}.cpp)
 target_include_directories(exeQ${NUM} PRIVATE ${QUESTION}/)
-add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.h)
+add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp)
 target_include_directories(exeA${NUM} PRIVATE ${ANSWER}/)
 
 # 問題2
 set(NUM 2)
-add_executable(exeQ${NUM} ${MAINS}/mainQ${NUM}.cpp ${QUESTION}/Q${NUM}.cpp ${QUESTION}/Q${NUM}.h)
+add_executable(exeQ${NUM} ${MAINS}/mainQ${NUM}.cpp ${QUESTION}/Q${NUM}.cpp)
 target_include_directories(exeQ${NUM} PRIVATE ${QUESTION}/)
-add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.cpp ${ANSWER}/Q${NUM}.h)
+add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.cpp)
 target_include_directories(exeA${NUM} PRIVATE ${ANSWER}/)
 
 # 問題3
 set(NUM 3)
-add_executable(exeQ${NUM} ${MAINS}/mainQ${NUM}.cpp ${QUESTION}/Q${NUM}Parent.cpp ${QUESTION}/Q${NUM}Parent.h ${QUESTION}/Q${NUM}Children.h)
+add_executable(exeQ${NUM} ${MAINS}/mainQ${NUM}.cpp ${QUESTION}/Q${NUM}Parent.cpp ${QUESTION}/Q${NUM}Children.cpp)
 target_include_directories(exeQ${NUM} PRIVATE ${QUESTION}/)
-add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp ${ANSWER}/Q${NUM}Parent.cpp ${ANSWER}/Q${NUM}Parent.h ${ANSWER}/Q${NUM}Children.cpp)
+add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp ${ANSWER}/Q${NUM}Parent.cpp ${ANSWER}/Q${NUM}Children.cpp)
 target_include_directories(exeA${NUM} PRIVATE ${ANSWER}/)
 
 
