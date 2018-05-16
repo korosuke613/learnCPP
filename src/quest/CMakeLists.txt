@@ -23,9 +23,17 @@ target_include_directories(exeQ${NUM} PRIVATE ${QUESTION}/)
 add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.cpp ${ANSWER}/Q${NUM}.h)
 target_include_directories(exeA${NUM} PRIVATE ${ANSWER}/)
 
+# 問題3
+set(NUM 3)
+add_executable(exeQ${NUM} ${MAINS}/mainQ${NUM}.cpp ${QUESTION}/Q${NUM}Parent.cpp ${QUESTION}/Q${NUM}Parent.h ${QUESTION}/Q${NUM}Children.h)
+target_include_directories(exeQ${NUM} PRIVATE ${QUESTION}/)
+add_executable(exeA${NUM} EXCLUDE_FROM_ALL ${MAINS}/mainQ${NUM}.cpp ${ANSWER}/Q${NUM}Parent.cpp ${ANSWER}/Q${NUM}Parent.h ${ANSWER}/Q${NUM}Children.cpp)
+target_include_directories(exeA${NUM} PRIVATE ${ANSWER}/)
+
 
 
 add_custom_target(ans
         DEPENDS exeA1
         DEPENDS exeA2
+        DEPENDS exeA3
         )

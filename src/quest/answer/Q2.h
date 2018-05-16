@@ -7,20 +7,23 @@ class Q2 {
  private:
   /**
    * multiple_num (int)
+   * @brief かける数
    */
   int multiple_num;
 
  public:
   /**
+   * Q2
    * @brief デフォルトコンストラクタ
    */
   Q2() = default;
 
   /**
+   * Q2
    * @brief mを初期化するコンストラクタ
    * @param m multiple_num
    */
-  Q2(int m):multiple_num(m){}
+  explicit Q2(int m):multiple_num(m){}
 
   /**
    * multiple
