@@ -6,4 +6,4 @@ CMakeFiles/
 *.cmake
 CmakeCache.txt
 exe*
-#Makefile
+Makefile

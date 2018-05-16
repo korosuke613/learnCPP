@@ -10,14 +10,21 @@ set(ANSWER "answer")
 
 # 問題1
 set(NUM 1)
-add_executable(Q${NUM} mainQ${NUM}.cpp ${QUESTION}/Q${NUM}.h)
-target_include_directories(Q${NUM} PRIVATE ${QUESTION}/)
-add_executable(A${NUM} mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.h)
-target_include_directories(A${NUM} PRIVATE ${ANSWER}/)
+add_executable(exeQ${NUM} mainQ${NUM}.cpp ${QUESTION}/Q${NUM}.h)
+target_include_directories(exeQ${NUM} PRIVATE ${QUESTION}/)
+add_executable(exeA${NUM} EXCLUDE_FROM_ALL mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.h)
+target_include_directories(exeA${NUM} PRIVATE ${ANSWER}/)
 
 # 問題2
 set(NUM 2)
-add_executable(Q${NUM} mainQ${NUM}.cpp ${QUESTION}/Q${NUM}.cpp ${QUESTION}/Q${NUM}.h)
-target_include_directories(Q${NUM} PRIVATE ${QUESTION}/)
-add_executable(A${NUM} mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.cpp ${ANSWER}/Q${NUM}.h)
-target_include_directories(A${NUM} PRIVATE ${ANSWER}/)
+add_executable(exeQ${NUM} mainQ${NUM}.cpp ${QUESTION}/Q${NUM}.cpp ${QUESTION}/Q${NUM}.h)
+target_include_directories(exeQ${NUM} PRIVATE ${QUESTION}/)
+add_executable(exeA${NUM} EXCLUDE_FROM_ALL mainQ${NUM}.cpp ${ANSWER}/Q${NUM}.cpp ${ANSWER}/Q${NUM}.h)
+target_include_directories(exeA${NUM} PRIVATE ${ANSWER}/)
+
+
+
+add_custom_target(ans
+        DEPENDS exeA1
+        DEPENDS exeA2
+        )
