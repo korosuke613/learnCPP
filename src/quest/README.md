@@ -29,3 +29,13 @@
 **使うファイル** `Q2.h`, `Q2.cpp`
 
 ### Q3
+`Q3Parent.h`と`Q3Children.h`のコメントを参考に、
+delete()されるときに悲鳴を返すクラス`Q3Parent`と、それを継承した`Q3ChildJapanese`、
+`Q3ChildAmerican`を作成せよ。
+
+なお、それぞれのクラスは以下のように悲鳴を返す。
+- Q3ChildJapanese-> **JP:おばぶ！**
+- Q3ChildAmerican-> **US:Oh! No!**
+
+
+使うファイル `Q3Parent.h`, `Q3Parent.cpp`, `Q3Children.h`, `Q3Children.cpp`
