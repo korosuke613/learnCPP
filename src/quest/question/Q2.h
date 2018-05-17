@@ -6,25 +6,25 @@
 class Q2 {
  private:
   /**
-   * multiple_num (int)
+   * (変数名)multiple_num (int)
    * @brief かける数
    */
   
   
 public:
   /**
-   * Q2
+   * (関数名)Q2
    * @brief デフォルトコンストラクタ
    */
 
   /**
-   * Q2
+   * (関数名)Q2
    * @brief multiple_numを初期化するコンストラクタ
    * @param m (int)
    */
 
   /**
-   * multiple
+   * (関数名)multiple
    * @brief multiple_numとxの積を返す。
    * @param x (int)
    * @return multiple_numとxの積 (const int)
