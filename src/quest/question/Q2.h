@@ -16,8 +16,8 @@ class Q2 {
 
   /**
    * Q2
-   * @brief mを初期化するコンストラクタ
-   * @param m multiple_num
+   * @brief multiple_numを初期化するコンストラクタ
+   * @param m (int)
    */
 
   /**
