@@ -12,3 +12,5 @@ add_executable(exeCastC cast.c)
 add_executable(exeCastCpp cast.cpp)
 
 add_executable(exeScope scope.cpp)
+
+add_executable(exeConstexpr constexpr.cpp)
