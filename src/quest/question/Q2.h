@@ -4,11 +4,14 @@
 #define Q2_H_
 
 class Q2 {
+ private:
   /**
    * multiple_num (int)
    * @brief かける数
    */
-
+  
+  
+public:
   /**
    * Q2
    * @brief デフォルトコンストラクタ
