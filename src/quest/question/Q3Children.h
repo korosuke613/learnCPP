@@ -6,38 +6,38 @@
 #include <memory>
 #include "Q3Parent.h"
 
-class Q3ChildAmerican : Q3Parent {
+class Q3ChildAmerican : public Q3Parent {
  public:
   /**
-   * Q3ChildAmerican
+   * (関数名) Q3ChildAmerican
    * @brief コンストラクタ
    */
   Q3ChildAmerican() : Q3Parent("US"){}
 
   /**
-   * Q3ChildAmerican
-   * @brief 悲鳴ポインタcryにcを格納するコンストラクタ
-   * @param c 悲鳴ポインタ (const std::shared_ptr<std::string>&)
+   * (関数名) Q3ChildAmerican
+   * @brief 悲鳴ポインタcryにstd::string型のアドレスsを格納するコンストラクタ
+   * @param s 悲鳴ポインタ (const std::shared_ptr<std::string>&)
    */
-  explicit Q3ChildAmerican(const std::shared_ptr<std::string>& c) : Q3Parent("US"){
-    cry = c;
+  explicit Q3ChildAmerican(const std::shared_ptr<std::string>& s) : Q3Parent("US") {
+    cry = s;
   }
 
   /**
-   * ~Q3ChildAmerican
+   * (関数名) ~Q3ChildAmerican
    * @brief *cryに悲鳴を格納するデストラクタ
    */
 
   /**
-   * cryOut
+   * (関数名) cryOut
    * @brief 悲鳴を返す
    * @return 悲鳴 (std::string)
    */
+  std::string cryOut() override;
 
 };
 
-
-class Q3ChildJapanese : Q3Parent {
+class Q3ChildJapanese : public Q3Parent {
  public:
   /**
    * Q3ChildJapanese
@@ -46,24 +46,25 @@ class Q3ChildJapanese : Q3Parent {
   Q3ChildJapanese() : Q3Parent("JP"){}
 
   /**
-   * Q3ChildJapanese
-   * @brief 悲鳴ポインタcryにcを格納するコンストラクタ
-   * @param c 悲鳴ポインタ (const std::shared_ptr<std::string>&)
+   * (関数名) Q3ChildJapanese
+   * @brief 悲鳴ポインタcryにstd::string型のアドレスsを格納するコンストラクタ
+   * @param s 悲鳴ポインタ (const std::shared_ptr<std::string>&)
    */
-   explicit Q3ChildJapanese(const std::shared_ptr<std::string>& c) : Q3Parent("JP"){
-     cry = c;
+  explicit Q3ChildJapanese(const std::shared_ptr<std::string>& s) : Q3Parent("JP") {
+    cry = s;
    }
 
   /**
-   * ~Q3ChildJapanese
+   * (関数名) ~Q3ChildJapanese
    * @brief *cryに悲鳴を格納するデストラクタ
    */
 
   /**
-   * cryOut
+   * (関数名) cryOut
    * @brief 悲鳴を返す
    * @return 悲鳴 (std::string)
    */
+  std::string cryOut() override;
 };
 
 #endif  // Q3ChildJapanese_H_

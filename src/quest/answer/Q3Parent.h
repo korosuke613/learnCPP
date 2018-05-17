@@ -11,40 +11,40 @@
 class Q3Parent {
  private:
   /**
-   * isDeath
+   * (変数名) isDeath
    * @brief 死の印 (std::shared_ptr<bool>)
    */
   std::shared_ptr<bool> isDeath{};
 
  protected:
   /**
-   * country
+   * (変数名) country
    * @brief 国名 (std::string)
    */
   std::string country;
 
   /**
-   * cry
+   * (変数名) cry
    * @brief 悲鳴が格納される
    */
   std::shared_ptr<std::string> cry{};
 
  public:
   /**
-   * Q3Parent
+   * (関数名) Q3Parent
    * @brief コンストラクタ
    */
   Q3Parent() = default;
 
   /**
-   * Q3Parent
-   * @brief 国名を設定するコンストラクタ
-   * @param c 国名
+   * (関数名) Q3Parent
+   * @brief 国名(country)を設定するコンストラクタ
+   * @param c 国名(std::string)
    */
   explicit Q3Parent(std::string c) : country(std::move(c)){}
 
   /**
-   * ~Q3Parent
+   * (関数名) ~Q3Parent
    * @brief *isDeathを真にする。
    */
   virtual ~Q3Parent(){
@@ -52,16 +52,16 @@ class Q3Parent {
   }
 
   /**
-   * cryOut
-   * @brief 泣き言を返す純粋仮想関数
-   * @return 泣き言 (std::string)
+   * (関数名) cryOut
+   * @brief 悲鳴を返す純粋仮想関数
+   * @return 悲鳴 (std::string)
    */
   virtual std::string cryOut() = 0;
 
   /**
-   * setDeath
-   * @brief 死を証明する印を刻む
-   * @param 印 (std::shared_ptr<bool>)
+   * (関数名) setDeath
+   * @brief isDeathにアドレスを格納する。
+   * @param bool型のアドレス (std::shared_ptr<bool>)
    */
   void setDeath(std::shared_ptr<bool>);
 };

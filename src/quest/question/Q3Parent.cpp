@@ -2,6 +2,6 @@
 
 #include "Q3Parent.h"
 
-void Q3Parent::setDeath(std::shared_ptr<bool> id) {
-  isDeath = std::move(id);
+void Q3Parent::setDeath(std::shared_ptr<bool> b) {
+  isDeath = std::move(b);
 }
