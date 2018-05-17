@@ -10,7 +10,7 @@ int main()
 {
   int x;
 
-  func(x);
+  func;
 
   std::cout << x << std::endl; // xの値が1になっている
 }
