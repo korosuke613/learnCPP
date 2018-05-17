@@ -6,12 +6,13 @@
 // 関数funcを作成する。
 
 
-int main()
-{
-  int x;
+int main(){
+  int x = 0;
 
   func;
 
   std::cout << x << std::endl; // xの値が1になっている
+  
+  return 0;
 }
 
