@@ -10,3 +10,5 @@ add_executable(exeReferenceCpp reference.cpp)
 
 add_executable(exeCastC cast.c)
 add_executable(exeCastCpp cast.cpp)
+
+add_executable(exeScope scope.cpp)
