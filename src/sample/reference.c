@@ -1,4 +1,4 @@
-// Copyright 2018 Futa HIRAKOBA
+// Copyright 2018 T.Miyaji, Futa HIRAKOBA
 
 // C言語流に、関数内で実変数の値が変わるコードを書け
 # include <stdio.h>
@@ -8,7 +8,7 @@
 
 int main()
 {
-  int x;
+  int x = 0;
 
   func(&x);
 
