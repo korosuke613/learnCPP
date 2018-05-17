@@ -14,6 +14,6 @@ int main()
 
   func(x);
 
-  printf("%d\n", x); // xの値が1になっている
+  std::cout << x << std::endl; // xの値が1になっている
 }
 
