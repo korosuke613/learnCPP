@@ -12,7 +12,7 @@ int main(){
   int x = 1;
 
   // 関数funcにxを渡し、戻り値を変数xxに格納する。ただし、autoを使うこと
-  auto xx = func(static_cast<double>(x));
+
 
   std::cout << xx << std::endl;  // xxの値が1.1になっている。
 }
